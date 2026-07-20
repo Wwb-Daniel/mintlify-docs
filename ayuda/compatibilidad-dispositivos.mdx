@@ -1,0 +1,252 @@
+---
+title: "Compatibilidad de Dispositivos con CinemaDB"
+sidebarTitle: "Dispositivos"
+description: "Descubre qué versión de CinemaDB usar en cada dispositivo: APK Android, app Windows, PWA para iPhone y casting en Smart TVs."
+---
+
+CinemaDB funciona en la gran mayoría de dispositivos modernos, ya sea mediante una app nativa, el navegador web o una web app instalable. Esta guía te indica exactamente qué versión usar según tu dispositivo para que tengas la mejor experiencia posible.
+
+## Resumen rápido de compatibilidad
+
+<CardGroup cols={2}>
+  <Card title="📱 Android (Teléfonos)" icon="mobile">
+    **✅ Compatible** — APK Moderno (arm64-v8a) para celulares fabricados a partir de 2017.
+  </Card>
+  <Card title="📟 Android (Tablets)" icon="tablet">
+    **✅ Compatible** — APK Moderno o APK de Compatibilidad según la arquitectura del procesador.
+  </Card>
+  <Card title="📺 TV Box / Fire TV / Xiaomi" icon="tv">
+    **✅ Compatible** — APK de Compatibilidad (armeabi-v7a) con soporte para control remoto.
+  </Card>
+  <Card title="🖥️ Windows 10/11" icon="windows">
+    **✅ Compatible** — App nativa (.ZIP) o cualquier navegador web moderno.
+  </Card>
+  <Card title="🍎 iPhone / iPad" icon="apple">
+    **✅ Compatible** — PWA instalable desde Safari (sin App Store).
+  </Card>
+  <Card title="🖥️ Mac / Linux" icon="laptop">
+    **✅ Compatible** — Navegador web (Chrome, Safari, Firefox).
+  </Card>
+  <Card title="📡 Chromecast" icon="cast">
+    **✅ Compatible** — Casting desde Chrome en PC o teléfono.
+  </Card>
+  <Card title="📺 Roku / Samsung Tizen" icon="screen-users">
+    **⚠️ Sin app nativa** — Compatible mediante casting o espejo de pantalla desde el teléfono.
+  </Card>
+</CardGroup>
+
+---
+
+## Android: Teléfonos y Tablets
+
+Los teléfonos Android son el entorno más optimizado para CinemaDB. Existen dos versiones APK según la arquitectura de tu procesador:
+
+| Versión APK | Arquitectura | Ideal para | Disponible desde |
+|-------------|-------------|------------|-----------------|
+| **APK Moderno** | arm64-v8a (64-bit) | Teléfonos gama media/alta | 2017 en adelante |
+| **APK Compat** | armeabi-v7a (32-bit) | Tablets antiguas, dispositivos 32-bit | Sin restricción de año |
+
+<Tip>
+  Si no sabes qué arquitectura tiene tu teléfono, descarga el **APK Moderno**. Si la instalación falla o la app no arranca, prueba con el **APK de Compatibilidad**.
+</Tip>
+
+<Steps>
+  <Step title="Visita la página de descargas">
+    Ve a [cinemadb.club/descargar](/apps/descarga-android) desde el navegador de tu teléfono.
+  </Step>
+  <Step title="Elige tu versión">
+    Selecciona **"Celulares Modernos"** para teléfonos actuales o **"TV Box & Antiguos"** para tablets más antiguas.
+  </Step>
+  <Step title="Habilita fuentes desconocidas si es necesario">
+    Si Android bloquea la instalación, ve a **Ajustes → Aplicaciones → Instalar apps desconocidas** y actívalo para tu navegador.
+  </Step>
+  <Step title="Instala y abre la app">
+    Abre el archivo `.apk` descargado y toca **Instalar**. En segundos tendrás CinemaDB lista para usar.
+  </Step>
+</Steps>
+
+---
+
+## TV Box, Amazon Fire TV y Xiaomi Stick
+
+<Info>
+  Estos dispositivos usan procesadores de 32-bit o una arquitectura de Android TV especial. Necesitas el **APK de Compatibilidad**.
+</Info>
+
+| Dispositivo | APK recomendada | Notas |
+|-------------|----------------|-------|
+| **TV Box genérico** | APK de Compatibilidad | Compatible con la mayoría de cajas Android |
+| **Amazon Fire TV** | APK de Compatibilidad | Instalar vía "Aplicaciones de fuentes desconocidas" |
+| **Xiaomi TV Stick** | APK de Compatibilidad | Habilitar instalación de apps externas en ajustes |
+| **Android TV (con mando)** | APK de Compatibilidad | Interfaz adaptada a control remoto |
+
+<Steps>
+  <Step title="Habilita apps de fuentes desconocidas en tu dispositivo">
+    En la mayoría de TV Box: **Ajustes → Seguridad → Instalar aplicaciones desconocidas → Activar**.
+    En Amazon Fire TV: **Ajustes → Mis aplicaciones y canales → Fuentes desconocidas → Activar**.
+  </Step>
+  <Step title="Descarga el APK de Compatibilidad">
+    Desde el navegador del dispositivo, ve a [cinemadb.club/descargar](/apps/descarga-android) y descarga la versión **"TV Box & Antiguos"**.
+  </Step>
+  <Step title="Instala y navega con el mando">
+    La interfaz de CinemaDB está completamente adaptada para navegación con control remoto.
+  </Step>
+</Steps>
+
+---
+
+## Windows 10 / 11
+
+CinemaDB ofrece una aplicación nativa para Windows que funciona sin necesidad de emuladores:
+
+| Método | Requisitos | Ideal para |
+|--------|-----------|------------|
+| **App nativa (.ZIP)** | Windows 10/11 x64 | Máximo rendimiento y experiencia de escritorio |
+| **Navegador web** | Chrome, Edge, Firefox actualizado | Acceso rápido sin instalación |
+
+<Steps>
+  <Step title="Descarga el paquete para Windows">
+    Ve a [cinemadb.club/descargar](/apps/windows) y descarga el archivo **CinemaDB-Windows-Release.zip**.
+  </Step>
+  <Step title="Extrae el archivo ZIP">
+    Haz clic derecho sobre el ZIP descargado y selecciona **"Extraer todo"** en la carpeta que prefieras.
+  </Step>
+  <Step title="Ejecuta la aplicación">
+    Abre la carpeta extraída y haz doble clic en el ejecutable de CinemaDB. No requiere instalación adicional.
+  </Step>
+</Steps>
+
+<Note>
+  Si prefieres no instalar nada, puedes acceder directamente desde tu navegador en [cinemadb.club](https://www.cinemadb.club). La experiencia web en Chrome o Edge es excelente.
+</Note>
+
+---
+
+## iPhone y iPad (iOS / iPadOS)
+
+CinemaDB no está disponible en la App Store, pero se puede instalar como **Progressive Web App (PWA)** desde Safari en pocos pasos. La experiencia es prácticamente idéntica a una app nativa.
+
+<Steps>
+  <Step title="Abre Safari">
+    En tu iPhone o iPad, abre **Safari** (no Chrome ni Firefox) y navega a [cinemadb.club](https://www.cinemadb.club).
+  </Step>
+  <Step title="Toca el botón Compartir">
+    Pulsa el ícono de **compartir** (cuadrado con flecha hacia arriba) en la barra de herramientas de Safari.
+  </Step>
+  <Step title="Selecciona «Agregar a pantalla de inicio»">
+    Desplázate por el menú de opciones y toca **"Agregar a pantalla de inicio"**.
+  </Step>
+  <Step title="Confirma e instala">
+    Personaliza el nombre si lo deseas y toca **"Agregar"**. CinemaDB aparecerá en tu pantalla de inicio con su propio ícono.
+  </Step>
+</Steps>
+
+<Warning>
+  Este proceso **solo funciona en Safari**. Desde Chrome u otros navegadores de iOS, la opción "Agregar a pantalla de inicio" no permite instalar la PWA correctamente.
+</Warning>
+
+Consulta la guía completa en [Instalar CinemaDB en iPhone/iPad](/apps/ios-pwa).
+
+---
+
+## Mac y Linux
+
+En Mac y Linux, CinemaDB funciona directamente desde el navegador, sin necesidad de instalar ninguna app:
+
+| Sistema | Navegadores compatibles | Calidad máxima |
+|---------|------------------------|---------------|
+| **macOS** | Chrome, Safari, Firefox | 1080p / 4K |
+| **Linux** | Chrome, Firefox | 1080p / 4K |
+
+<Tip>
+  Para la mejor experiencia en Mac, usa **Chrome** o **Safari** con hardware acceleration activado. Esto mejora notablemente la reproducción en 4K.
+</Tip>
+
+---
+
+## Chromecast
+
+Puedes transmitir CinemaDB a tu televisor mediante Chromecast directamente desde Chrome en tu PC o teléfono Android:
+
+<Steps>
+  <Step title="Abre CinemaDB en Chrome">
+    Desde tu PC o teléfono Android, abre [cinemadb.club](https://www.cinemadb.club) en **Google Chrome**.
+  </Step>
+  <Step title="Toca el ícono de Cast">
+    Haz clic en el menú (⋮) de Chrome y selecciona **"Transmitir..."**, luego elige tu dispositivo Chromecast.
+  </Step>
+  <Step title="Reproduce tu contenido">
+    El video se reproducirá directamente en tu televisor. Controla la reproducción desde Chrome en tu dispositivo.
+  </Step>
+</Steps>
+
+---
+
+## Smart TVs: Roku y Samsung (Tizen)
+
+<Warning>
+  **Roku** y **Samsung Smart TV (Tizen)** usan sistemas operativos cerrados que no permiten instalar APK de Android ni apps externas que no estén en sus tiendas oficiales. No existe una versión nativa de CinemaDB para estos sistemas.
+</Warning>
+
+Sin embargo, puedes disfrutar de CinemaDB en estos televisores usando **casting o espejo de pantalla** desde tu teléfono:
+
+### Casting desde Android a Roku o Samsung
+
+<Steps>
+  <Step title="Asegúrate de que ambos dispositivos estén en la misma red Wi-Fi">
+    Tu teléfono y el televisor deben estar conectados a la misma red doméstica.
+  </Step>
+  <Step title="Activa Screen Mirroring en el televisor">
+    - **Roku:** Ve a **Ajustes → Sistema → Screen Mirroring** y actívalo.
+    - **Samsung:** Presiona el botón **Source** del control y selecciona **"Screen Mirroring"** o usa **"Smart View"** desde el menú.
+  </Step>
+  <Step title="Activa la transmisión desde tu teléfono Android">
+    Ve a **Ajustes → Conexiones → Pantalla inteligente** (o "Transmitir pantalla" según el fabricante) y selecciona tu televisor de la lista.
+  </Step>
+  <Step title="Abre CinemaDB y reproduce">
+    Con el espejo activo, todo lo que veas en tu teléfono aparecerá en el televisor. Abre CinemaDB y disfruta.
+  </Step>
+</Steps>
+
+### Casting desde iPhone/iPad a Samsung
+
+Puedes usar **AirPlay** si tienes un Samsung compatible (modelos 2019 o más nuevos):
+
+<Steps>
+  <Step title="Activa AirPlay en el televisor Samsung">
+    Ve a **Ajustes → General → Apple AirPlay** y actívalo.
+  </Step>
+  <Step title="Usa Screen Mirroring desde iPhone">
+    Desliza hacia abajo el Centro de Control en tu iPhone, toca **"Duplicar pantalla"** y selecciona tu Samsung.
+  </Step>
+  <Step title="Reproduce desde CinemaDB">
+    Abre la PWA de CinemaDB en tu iPhone y el contenido se mostrará en el televisor.
+  </Step>
+</Steps>
+
+---
+
+## LG webOS
+
+<Info>
+  CinemaDB no tiene una app nativa para LG webOS, pero **el navegador web integrado de LG puede funcionar** en modelos recientes que soporten Chrome o webOS 6+. La compatibilidad puede variar según el modelo y año del televisor.
+</Info>
+
+---
+
+## Tabla completa de compatibilidad
+
+| Dispositivo | Estado | Método | Versión |
+|-------------|--------|--------|---------|
+| Android Phone (2017+) | ✅ Soportado | App nativa | APK Moderno |
+| Android Tablet | ✅ Soportado | App nativa | APK Moderno o Compat |
+| TV Box / Fire TV / Xiaomi Stick | ✅ Soportado | App nativa | APK de Compatibilidad |
+| Android TV (con mando) | ✅ Soportado | App nativa | APK de Compatibilidad |
+| Windows 10/11 x64 | ✅ Soportado | App nativa o navegador | .ZIP / web |
+| iPhone / iPad | ✅ Soportado | PWA (Safari) | Web App |
+| Mac | ✅ Soportado | Navegador | Chrome / Safari / Firefox |
+| Linux | ✅ Soportado | Navegador | Chrome / Firefox |
+| Chromecast | ✅ Soportado | Casting desde Chrome | — |
+| Roku | ⚠️ Sin app nativa | Casting / Screen Mirroring | — |
+| Samsung Smart TV (Tizen) | ⚠️ Sin app nativa | Screen Mirroring / AirPlay | — |
+| LG webOS | ⚠️ Parcial | Navegador integrado | — |

@@ -1,0 +1,93 @@
+{
+  "projectType": "saas",
+  "projectName": "CinemaDB",
+  "projectDescription": "CinemaDB es una plataforma de streaming gratuita que ofrece películas, series, anime y TV en vivo en HD, disponible como app web, app Android/iOS y aplicación de escritorio para Windows.",
+  "theme": "almond",
+  "primaryColor": "#E50914",
+  "lightColor": "#FF1F2D",
+  "darkColor": "#B20710",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guía de Usuario",
+        "groups": [
+          {
+            "group": "Introducción",
+            "pages": [
+              "introduccion",
+              "primeros-pasos"
+            ]
+          },
+          {
+            "group": "Contenido",
+            "pages": [
+              "contenido/peliculas",
+              "contenido/series",
+              "contenido/anime",
+              "contenido/tv-en-vivo"
+            ]
+          },
+          {
+            "group": "Tu Cuenta",
+            "pages": [
+              "cuenta/registro-e-inicio-sesion",
+              "cuenta/perfil-y-configuracion",
+              "cuenta/favoritos-e-historial",
+              "cuenta/planes-premium"
+            ]
+          },
+          {
+            "group": "Aplicaciones",
+            "pages": [
+              "apps/descarga-android",
+              "apps/windows",
+              "apps/ios-pwa"
+            ]
+          },
+          {
+            "group": "Ayuda",
+            "pages": [
+              "ayuda/preguntas-frecuentes",
+              "ayuda/compatibilidad-dispositivos",
+              "ayuda/comunidad-y-discord"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Catálogo de películas en HD y 4K con búsqueda avanzada y filtros por género y año",
+    "Series completas con temporadas y episodios organizados",
+    "Anime Hub con estrenos y clásicos sin anuncios",
+    "TV en vivo con más de 500 canales IPTV en HD (noticias, deportes, entretenimiento, infantil)",
+    "Aplicación Android (APK) para móviles, TV Box y Android TV",
+    "Aplicación nativa para Windows (no requiere emulador)",
+    "Web App progresiva (PWA) para iPhone e iPad desde Safari",
+    "Sistema de favoritos y continuar viendo sincronizados en la nube",
+    "Historial de reproducción local y en la nube",
+    "Sistema de comentarios y chat de la comunidad",
+    "Planes Premium con HD ilimitado y sin anuncios",
+    "Notificaciones de novedades vía Discord",
+    "Soporte para casting/screen mirroring en Roku y Samsung"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login",
+    "POST /api/auth/register",
+    "GET /api/movies",
+    "GET /api/movies/[id]/comments",
+    "GET /api/movies/[id]/views",
+    "GET /api/series",
+    "GET /api/anime",
+    "GET /api/channels",
+    "GET /api/favorites",
+    "POST /api/favorites",
+    "DELETE /api/favorites/[peliculaId]",
+    "GET /api/watch-history",
+    "GET /api/stats",
+    "GET /api/limits/check",
+    "POST /api/checkout",
+    "POST /api/checkout/portal",
+    "GET /api/user/profile"
+  ]
+}
