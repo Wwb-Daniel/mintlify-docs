@@ -1,17 +1,22 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "CinemaDB",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://www.cinemadb.club"
+  },
+  "favicon": "/favicon.svg",
   "theme": "almond",
   "colors": {
     "primary": "#E50914",
     "light": "#FF1F2D",
     "dark": "#B20710"
   },
-  "favicon": "/favicon.svg",
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Ir a CinemaDB",
+      "label": "Ir a CinemaDB Club",
       "href": "https://www.cinemadb.club"
     }
   },
@@ -28,7 +33,7 @@
             ]
           },
           {
-            "group": "Contenido",
+            "group": "Catálogo & Entretenimiento",
             "pages": [
               "contenido/peliculas",
               "contenido/series",
@@ -37,7 +42,7 @@
             ]
           },
           {
-            "group": "Tu Cuenta",
+            "group": "Tu Cuenta & Suscripción",
             "pages": [
               "cuenta/registro-e-inicio-sesion",
               "cuenta/perfil-y-configuracion",
@@ -46,7 +51,7 @@
             ]
           },
           {
-            "group": "Aplicaciones",
+            "group": "Aplicaciones y Descargas",
             "pages": [
               "apps/descarga-android",
               "apps/windows",
@@ -54,7 +59,7 @@
             ]
           },
           {
-            "group": "Ayuda",
+            "group": "Soporte y Comunidad",
             "pages": [
               "ayuda/preguntas-frecuentes",
               "ayuda/compatibilidad-dispositivos",

@@ -1,0 +1,5 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="10" fill="#E50914"/>
+  <path d="M12 28V12L28 20L12 28Z" fill="white"/>
+  <text x="48" y="27" font-family="System-UI, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF">Cinema<tspan fill="#E50914">DB</tspan></text>
+</svg>

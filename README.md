@@ -1,55 +1,31 @@
-# Mintlify Starter Kit
+# 🎬 CinemaDB Documentation Center
 
-Use the starter kit to get your docs deployed and ready to customize.
+Centro de documentación oficial y guía de ayuda para **CinemaDB** (cinemadb.club).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 🚀 Acerca de CinemaDB
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+CinemaDB es la plataforma de entretenimiento gratuita con miles de películas, series completas, anime y más de 500 canales de televisión en vivo en calidad HD.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- 🌐 **Web**: [cinemadb.club](https://www.cinemadb.club)
+- 📡 **IPTV en Vivo**: Canales satelitales en directo 24/7.
+- 📱 **Multiplataforma**: Web, Android (APK), Windows nativo e iOS (PWA).
 
-## AI-assisted writing
+## 🛠️ Cómo previsualizar localmente
 
-Set up your AI coding tool to work with Mintlify:
+Para previsualizar esta documentación en local con el CLI:
 
 ```bash
-npx skills add https://mintlify.com/docs
+npm i -g mintlify
+mintlify dev
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+Abre `http://localhost:3000` en tu navegador para ver los cambios en tiempo real.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+## 📄 Estructura del Proyecto
 
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+- `docs.json`: Configuración de temas, navegación, logos y colores oficiales (#E50914).
+- `logo/`: Logos SVG vectoriales y PNG de alta resolución.
+- `images/`: Capturas promocionales y recursos gráficos de CinemaDB.
+- `contenido/`: Guías de películas, series, anime y TV en vivo.
+- `apps/`: Tutoriales de instalación para Android, Windows e iOS.
+- `cuenta/`: Gestión de perfiles, favoritos y planes Premium.
